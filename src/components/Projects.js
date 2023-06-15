@@ -1,10 +1,10 @@
 import { ProjectCard } from "./ProjectCard";
 
 const projects = [
-  { title: "test", subTitle: "test" },
-  { title: "", subTitle: "" },
-  { title: "", subTitle: "" },
-  { title: "", subTitle: "" },
+  { projectTitle: "test", projectSubTitle: "test" },
+  { projectTitle: "", projectSubTitle: "" },
+  { projectTitle: "", projectSubTitle: "" },
+  { projectTitle: "", projectSubTitle: "" },
 ];
 
 export const Projects = () => {
@@ -13,9 +13,9 @@ export const Projects = () => {
       {projects.map((project) => {
         return (
           <ProjectCard
-            title={project.title}
-            subTitle={project.subTitle}
-            key={project.title}
+            projectTitle={project.projectTitle}
+            projectSubTitle={project.projectSubTitle}
+            key={project.projectTitle}
           />
         );
       })}
