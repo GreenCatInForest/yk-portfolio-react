@@ -4,7 +4,12 @@ import Col from "react-bootstrap/Col";
 import { ProjectCard } from "./ProjectCard";
 
 const projects = [
-  { projectTitle: "test", projectSubTitle: "test" },
+  {
+    projectTitle: "test",
+    projectSubTitle: "test",
+    projectImg:
+      "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+  },
   { projectTitle: "", projectSubTitle: "" },
   { projectTitle: "", projectSubTitle: "" },
   { projectTitle: "", projectSubTitle: "" },
@@ -20,6 +25,7 @@ export const Projects = () => {
               <ProjectCard
                 projectTitle={project.projectTitle}
                 projectSubTitle={project.projectSubTitle}
+                projectImg={project.projectImg}
               />
             </Col>
           );

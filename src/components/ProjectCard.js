@@ -14,6 +14,7 @@ export const ProjectCard = (props) => {
         <Card.Subtitle className="mb-2 text-muted">
           {projectSubTitle}
         </Card.Subtitle>
+        <img src={projectImg} alt={projectTitle} />
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
