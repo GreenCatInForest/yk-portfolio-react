@@ -1,3 +1,6 @@
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import { ProjectCard } from "./ProjectCard";
 
 const projects = [
@@ -9,16 +12,19 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <div>
-      {projects.map((project) => {
-        return (
-          <ProjectCard
-            projectTitle={project.projectTitle}
-            projectSubTitle={project.projectSubTitle}
-            key={project.projectTitle}
-          />
-        );
-      })}
-    </div>
+    <Container fluid>
+      <Row xs={1} md={2} lg={4} className="g-4 mx-auto">
+        {projects.map((project) => {
+          return (
+            <Col className="mx-auto" key={project.projectTitle}>
+              <ProjectCard
+                projectTitle={project.projectTitle}
+                projectSubTitle={project.projectSubTitle}
+              />
+            </Col>
+          );
+        })}
+      </Row>
+    </Container>
   );
 };

@@ -5,11 +5,11 @@ export const ProjectCard = (props) => {
   const projectSubTitle = props.projectSubTitle;
   const projectImg = props.projectImg;
   const projectLink = props.projectLink;
-  const projectGithub = props.projectGithub;
+  const projectGithubLink = props.projectGithubLink;
 
   return (
-    <Card style={{ width: "18rem" }}>
-      <Card.Body>
+    <Card>
+      <Card.Body className="text-center">
         <Card.Title>{projectTitle}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">
           {projectSubTitle}
