@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import logo192 from "../media/logo192.png";
 import { ProjectCard } from "./ProjectCard";
 
 const projects = [
@@ -10,7 +11,11 @@ const projects = [
     projectImg:
       "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
   },
-  { projectTitle: "", projectSubTitle: "" },
+  {
+    projectTitle: "",
+    projectSubTitle: "",
+    projectImg: logo192,
+  },
   { projectTitle: "", projectSubTitle: "" },
   { projectTitle: "", projectSubTitle: "" },
 ];
